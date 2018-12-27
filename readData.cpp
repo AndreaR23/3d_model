@@ -54,6 +54,7 @@ void readData::loadImages(const std::vector<string>& images)
 
 }
 
+
 void readData::readFile() {
     ifstream ifs(fileName.c_str(), ios::binary);
     ifs.seekg(0, ifs.beg);
