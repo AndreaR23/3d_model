@@ -3,6 +3,8 @@ set(EXECUTABLE_NAME "projekt_3D")
 add_executable(${EXECUTABLE_NAME} FVIZ_project.cpp
         readData.cpp
         readData.h
+    	Mouse.cpp
+    	Mouse.h
         )
 
 # Detect and add SFML
@@ -21,6 +23,6 @@ target_link_libraries(projekt_3D ${OPENGL_LIBRARIES})
 
 # c++11
 set(CMAKE_CXX_FLAGS "-std=c++11 -O3")
-#set(CMAKE_CXX_STANDARD 11)
-#set(CMAKE_CXX_STANDARD_REQUIRED ON)
-#message(STATUS "C++11 support has been enabled by default.")
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -O0")
+set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -O0")
+

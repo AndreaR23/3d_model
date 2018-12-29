@@ -18,6 +18,7 @@ readData::readData(string path)
 	this->path = path;
 	std::vector<string> images;
 	images = getAllImagesInPath(path);
+    sort(images.begin(), images.end());
 	loadImages(images);
 }
 
@@ -53,7 +54,6 @@ void readData::loadImages(const std::vector<string>& images)
 	}
 
 }
-
 
 void readData::readFile() {
     ifstream ifs(fileName.c_str(), ios::binary);

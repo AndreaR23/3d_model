@@ -1,7 +1,9 @@
 #include <fstream>
 #include <vector>
 #include <iostream>
+#include "SFML/System.hpp"
 #include "SFML/Graphics.hpp"
+#include "SFML/OpenGL.hpp"
 #include "stdio.h"
 #include <experimental/filesystem>
 namespace fs = std::experimental::filesystem;
